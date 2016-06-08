@@ -43,8 +43,6 @@ cond <- sapply(json_data, function(x) dim(x$companies)[2]>0)
 
 sum(cond) / length(json_data) # only 25% of the data are useful in this case
 
-
-
 ##############################
 # decided to do via data.table
 ##############################
