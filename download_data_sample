@@ -1,0 +1,59 @@
+#!/bin/bash
+
+mkdir -p ~/Downloads/ShareThisSample/20160308/
+mkdir -p ~/Downloads/ShareThisSample/20160309/
+mkdir -p ~/Downloads/ShareThisSample/20160310/
+mkdir -p ~/Downloads/ShareThisSample/20160311/
+mkdir -p ~/Downloads/ShareThisSample/20160312/
+mkdir -p ~/Downloads/ShareThisSample/20160313/
+mkdir -p ~/Downloads/ShareThisSample/20160314/
+
+#0308
+gsutil cp gs://sharethis-sdf/tickers/us/20160308/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160308/
+gsutil cp gs://sharethis-sdf/tickers/us/20160308/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160308/
+gsutil cp gs://sharethis-sdf/tickers/us/20160308/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160308/
+gsutil cp gs://sharethis-sdf/tickers/us/20160308/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160308/
+gsutil cp gs://sharethis-sdf/tickers/us/20160308/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160308/
+
+
+#0309
+gsutil cp gs://sharethis-sdf/tickers/us/20160309/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160309/
+gsutil cp gs://sharethis-sdf/tickers/us/20160309/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160309/
+gsutil cp gs://sharethis-sdf/tickers/us/20160309/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160309/
+gsutil cp gs://sharethis-sdf/tickers/us/20160309/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160309/
+gsutil cp gs://sharethis-sdf/tickers/us/20160309/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160309/
+
+#0310
+gsutil cp gs://sharethis-sdf/tickers/us/20160310/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160310/
+gsutil cp gs://sharethis-sdf/tickers/us/20160310/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160310/
+gsutil cp gs://sharethis-sdf/tickers/us/20160310/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160310/
+gsutil cp gs://sharethis-sdf/tickers/us/20160310/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160310/
+gsutil cp gs://sharethis-sdf/tickers/us/20160310/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160310/
+
+#0311
+gsutil cp gs://sharethis-sdf/tickers/us/20160311/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160311/
+gsutil cp gs://sharethis-sdf/tickers/us/20160311/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160311/
+gsutil cp gs://sharethis-sdf/tickers/us/20160311/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160311/
+gsutil cp gs://sharethis-sdf/tickers/us/20160311/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160311/
+gsutil cp gs://sharethis-sdf/tickers/us/20160311/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160311/
+
+#0312
+gsutil cp gs://sharethis-sdf/tickers/us/20160312/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160312/
+gsutil cp gs://sharethis-sdf/tickers/us/20160312/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160312/
+gsutil cp gs://sharethis-sdf/tickers/us/20160312/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160312/
+gsutil cp gs://sharethis-sdf/tickers/us/20160312/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160312/
+gsutil cp gs://sharethis-sdf/tickers/us/20160312/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160312/
+
+#0313
+gsutil cp gs://sharethis-sdf/tickers/us/20160313/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160313/
+gsutil cp gs://sharethis-sdf/tickers/us/20160313/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160313/
+gsutil cp gs://sharethis-sdf/tickers/us/20160313/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160313/
+gsutil cp gs://sharethis-sdf/tickers/us/20160313/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160313/
+gsutil cp gs://sharethis-sdf/tickers/us/20160313/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160313/
+
+#0314
+gsutil cp gs://sharethis-sdf/tickers/us/20160314/part-000000000006.log.gz ~/Downloads/ShareThisSample/20160314/
+gsutil cp gs://sharethis-sdf/tickers/us/20160314/part-000000000046.log.gz ~/Downloads/ShareThisSample/20160314/
+gsutil cp gs://sharethis-sdf/tickers/us/20160314/part-000000000146.log.gz ~/Downloads/ShareThisSample/20160314/
+gsutil cp gs://sharethis-sdf/tickers/us/20160314/part-000000000246.log.gz ~/Downloads/ShareThisSample/20160314/
+gsutil cp gs://sharethis-sdf/tickers/us/20160314/part-000000000300.log.gz ~/Downloads/ShareThisSample/20160314/
