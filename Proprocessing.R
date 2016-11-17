@@ -13,7 +13,7 @@ preprocessing <- function( input, output, is_mac = FALSE, cores = 16, cores_auto
     if(is_mac){
         json_data<- mclapply(readLines(input), fromJSON, flatten = TRUE)
         cond <- sapply(json_data, function(x) dim(x$companies)[2]>0)
-        raw_json_dt <- do.call(rbindlist,list( l = mclappy( json_data[cond], as.data.frame), fill = T))
+        raw_json_dt <- do.call(rbindlist,list( l = mclapply( json_data[cond], as.data.frame), fill = T))
     }
     ## if windows
     else{

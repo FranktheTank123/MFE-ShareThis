@@ -12,17 +12,17 @@ library(data.table)
 ##############################
 
 # please edit this path
-json_file <- "\\\\hcs-data2\\tianyi_xia$\\Documents\\ShareThis\\part-000000000346.log" 
+json_file <- "/Users/tianyixia/Google Drive/ShareThis/Frank - R Code/part-000000000346.log" 
 pc_cores <- detectCores()
 
 
 ##############################
 # mac version
-#json_data<- mclapply(readLines(json_file), fromJSON, flatten = TRUE) #parse each line of the JSON and combine into a list
+json_data<- mclapply(readLines(json_file), fromJSON, flatten = TRUE) #parse each line of the JSON and combine into a list
 
 #windows version
-cl<-makeCluster( 16, type="SOCK") #  choose how many cores to use
-json_data <- parLapply(cl, readLines(json_file), fromJSON, flatten = TRUE)
+#cl<-makeCluster( 16, type="SOCK") #  choose how many cores to use
+#json_data <- parLapply(cl, readLines(json_file), fromJSON, flatten = TRUE)
 
 
 
@@ -48,10 +48,10 @@ sum(cond) / length(json_data) # only 25% of the data are useful in this case
 ##############################
 
 # parse the list into a data.table
-# for mac, can replace parLapply(cl, ...) by mclappy(...)
+# for mac, can replace parLapply(cl, ...) by mclapply(...)
 #raw_json_dt <- as.data.table(do.call(rbind.fill, parLapply(cl, json_data[cond], as.data.frame)))  # this step is gonna be very slow...
 
-raw_json_dt <- do.call(rbindlist,list( l = parLapply(cl, json_data[cond], as.data.frame), fill = T))
+raw_json_dt <- do.call(rbindlist,list( l = mclapply(json_data[cond], as.data.frame), fill = T))
 
 
 #get a temp working copy, remove counts without companies tickesrs
